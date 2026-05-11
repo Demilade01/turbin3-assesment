@@ -1,0 +1,30 @@
+{
+  "name": "spl-nft-minting",
+  "version": "1.0.0",
+  "description": "SPL Token and NFT minting scripts using Solana and Metaplex MPL Core",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "mint:token": "ts-node scripts/mint-token.ts",
+    "mint:nft": "ts-node scripts/mint-nft.ts",
+    "dev": "ts-node"
+  },
+  "keywords": ["solana", "spl", "nft", "metaplex"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.91.0",
+    "@solana/spl-token": "^0.4.6",
+    "@metaplex-foundation/mpl-token-metadata": "^3.4.0",
+    "@metaplex-foundation/umi": "^0.10.0",
+    "@metaplex-foundation/umi-bundle-defaults": "^0.10.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2",
+    "dotenv-cli": "^7.3.0"
+  }
+}
